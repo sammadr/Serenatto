@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./estilos.css">
   </head>
 <body>
+  <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
@@ -34,7 +35,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="contacto">Contacto</a>
               </li><li class="nav-item">
                 <a class="nav-link" href="#">
                   <div class="form-check form-switch">
@@ -174,13 +175,55 @@
 
     </section>
 
-
     <!-- Banner 3 -->
     <section class="banners banner-3"></section>
 
     <!-- Formulario -->
+    <section class="py-4 container">
+      <div class="row">
+        <div class="col-10 col-xl-8 mx-auto">
+          <div class="border border-2 rounded p-3">
+            <h3 class="fw-bold p-3">¡Contáctanos!</h3>
+            <form id="contacto">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
+                <label for="floatingNombre">Nombre</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingCorreo" placeholder="nombre@example.com">
+                <label for="floatingCorreo">Correo electrónico</label>
+              </div>
 
-    <!-- Footer -->
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingTelefono" placeholder="Teléfono">
+                <label for="floatingTelefono">Teléfono</label>
+              </div>
+            
+              <select class="form-select mb-3" aria-label="Default select example">
+                <option selected>Preferencia de Contacto</option>
+                <option value="1">WhatsApp</option>
+                <option value="2">Correo electrónico</option>
+                <option value="3">LLamada telefónica</option>
+              </select>
+    
+              <label for="nivel-satisfaccion" class="form-label fw-bold">Nivel de satisfacción</label>
+              <input type="range" class="form-range" id="nivel-satisfaccion">
+    
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  ¿Quieres recibir novedades por correo electrónico?
+                </label>
+              </div>
+    
+              <button type="button" class="btn boton-estandar fw-bold mt-3 py-3 w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
@@ -234,7 +277,7 @@
       </div>
     </div>
   </div>
-
+  
   <!-- Canvas 2 -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -255,7 +298,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button boton-estandar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -272,7 +315,7 @@
       </div>
     </div>
   </div>
-
+  
   <!-- Canvas 3 -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -293,7 +336,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button boton-estandar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -326,9 +369,9 @@
             El café Serenatto es conocido por sus mezclas tradicionales y sabrosas que deleitan a los amantes de la bebida. Nuestros granos son cuidadosamente seleccionados y tostados para producir un aroma rico y un sabor equilibrado.
           </p>
             
-            <p>
-              Entre los cafés más tradicionales de la casa, destaca el "Café Serenatto", una mezcla exclusiva de granos con notas de chocolate y caramelo. Otra opción popular es el "Café Italiano", un café expreso robusto e intenso. Por último, el "Café Cappuccino" es una elección clásica para aquellos que prefieren una bebida cremosa y suave.
-            </p>
+          <p>
+            Entre los cafés más tradicionales de la casa, destaca el "Café Serenatto", una mezcla exclusiva de granos con notas de chocolate y caramelo. Otra opción popular es el "Café Italiano", un café expreso robusto e intenso. Por último, el "Café Cappuccino" es una elección clásica para aquellos que prefieren una bebida cremosa y suave.
+          </p>
         </div>
         <div class="modal-footer mx-auto">
           <button type="button" class="btn btn-secondary boton-estandar border-0" data-bs-dismiss="modal">Cerrar ventana</button>
@@ -362,6 +405,8 @@
     </div>
   </div>
 
+
+  <!-- Footer -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
