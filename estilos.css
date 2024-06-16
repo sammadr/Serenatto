@@ -55,8 +55,12 @@ input[type=checkbox]:checked, input[type="checkbox"]:focus {
   outline: none;
 }
 
-/* Estilo del pulgar (thumb) para WebKit (Chrome, Safari, Opera) y Mozilla (Firefox) */
-.form-range::-webkit-slider-thumb,
+/* Estilo del pulgar (thumb) para WebKit (Chrome, Safari, Opera)  */
+.form-range::-webkit-slider-thumb, footer{
+  background-color: var(--cafe-claro);
+}
+
+/* Estilo del pulgar (thumb) para WebKit Mozilla (Firefox)  */
 .form-range::-moz-range-thumb, footer {
   background-color: var(--cafe-claro);
 }
