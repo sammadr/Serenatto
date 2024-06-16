@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   --bege: #E6E0D6;
   --cafe-oscuro: #816D4F;
   --cafe-claro: #B29463;
+  font-family: "Barlow", sans-serif;
+  height: 4000px;
+}
+
+.banners{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-1{
+  background-image: url(./assets/banner-1.png);
+}
+
+.banner-2{
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3{
+  background-image: url(./assets/banner-3.png);
+}
+
+.banners-titulo{
+  --bs-bg-opacity: 0.2;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--cafe-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked, input[type="checkbox"]:focus {
+  background-color: var(--cafe-claro);
+  border-color: var(--cafe-claro);
+  box-shadow: none;
+  outline: none;
 }
