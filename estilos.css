@@ -8,6 +8,16 @@ body {
   height: 4000px;
 }
 
+.boton-estandar{
+  background: var(--cafe-claro);
+  color: white;
+}
+
+.boton-estandar:hover{
+  background: var(--cafe-oscuro);
+  color: var(--bege);
+}
+
 .banners{
   width: 100%;
   height: 100vh;
