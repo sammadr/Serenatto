@@ -10,7 +10,7 @@ body {
 
 .boton-estandar{
   background: var(--cafe-claro);
-  color: white;
+  color: black;
 }
 
 .boton-estandar:hover{
@@ -59,4 +59,18 @@ input[type=checkbox]:checked, input[type="checkbox"]:focus {
 .form-range::-webkit-slider-thumb,
 .form-range::-moz-range-thumb, footer {
   background-color: var(--cafe-claro);
+}
+
+[data-bs-theme="dark"]{
+  color: white;
+  .nav-link, .card-body, offcanvas, .accordion, .btn{
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-accordion-color: white;
+    --bs-btn-color: white;
+  }
+  .boton-estandar{
+    color: white;
+  }
 }
